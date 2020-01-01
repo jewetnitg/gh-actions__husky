@@ -1,0 +1,15 @@
+name: "husky"
+description: "husky github action"
+author: "Rik Hoffbauer"
+inputs:
+    config:
+        description: ".huskyrc.json"
+        required: false
+        default: |
+            {
+                "hooks": {}
+            }
+
+runs:
+    using: "node12"
+    main: "dist/index.js"
